@@ -1,0 +1,282 @@
+/* SECTION WELCOME */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 500px;
+    background-image: url('./../images/bandeau.png');
+}
+
+/* TITLE */
+.welcome-section h2 {
+    padding: 0 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+/* SECTION CARD WELCOME */
+.welcome-section-cards {
+    padding: 0 5rem;
+    width: 100%;
+    position: absolute;
+    bottom: -5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome-section-card {
+    background-color: white;
+    padding: 1.5rem 3.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px -1px #BDA672AA;
+}
+
+.welcome-section-card-logo {
+    font-size: 2rem;
+    color: #BDA672;
+}
+
+/* SECTION ABOUT */
+.about-section {
+    display: flex;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+.about-section h2 {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #BDA672;
+}
+
+.about-section-left {
+    width: 75%;
+}
+
+.about-section-right {
+    width: 25%;
+    margin: 0 3rem;
+}
+
+.about-section-about article,
+.about-section-about img,
+.more-section article,
+.more-section img {
+    margin: 0 3rem 0 0;
+    width: 50%;
+}
+
+.about-section-about article,
+.more-section article {
+    margin: 0 3rem;
+}
+
+
+.about-section-about {
+    margin-bottom: 1rem;
+}
+
+.about-section-about,
+.more-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.more-section-list a {
+    color: black;
+}
+
+.more-section-list i {
+    color: #BDA672;
+    margin-right: 1rem;
+}
+
+.more-section-list li {
+    margin-bottom: 0.5rem;
+}
+
+.about-section-right-image {
+    width: 100%;
+    height: 296px;
+    position: relative;
+    background-image: url('./../images/a-la-une.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-section-right-image-date {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #BDA672;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.about-section-right-image img {
+    width: 100%;
+}
+
+.about-section-right article a {
+    background-color: #BDA672;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* SECTION VIDEO */
+.section-video {
+    margin: 5rem 1rem 0 0;
+}
+
+.section-video h2 {
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #BDA672;
+}
+
+/* CONTACT FORM */
+.contact-form-section {
+    margin: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-section-content {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 2px solid #BDA672;
+    border-top: 2px solid #BDA672;
+}
+
+
+
+/* RESPONSIVE */
+/* Tablet (entre 768px et 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767px) {
+    header {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        width: 50%;
+    }
+
+    .header-navbar-list {
+        width: 100%;
+        display: none;
+        background-color: white;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .header-burger-section {
+        width: 50%;
+    }
+
+    .header-burger-menu {
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+        text-align: right;
+    }
+
+    .burger-toggle:checked~.header-navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .burger-menu-logo {
+        font-size: 1.5rem;
+        color: gray;
+        margin-left: auto;
+    }
+
+    .header-logo-img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .header-navbar-list {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .header-navbar-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome-section {
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .welcome-section-cards {
+        padding: 0 1rem;
+        display: flex;
+        top: 90%;
+        flex-direction: column;
+    }
+
+    .welcome-section-card {
+        width: 80%;
+        margin: 0 auto 1rem auto;
+    }
+
+    .about-section {
+        margin-top: 40rem;
+        flex-direction: column;
+    }
+
+    .about-section-left,
+    .about-section-right {
+        width: 100%;
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+    .about-section-about,
+    .more-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-section-about img,
+    .about-section-about article,
+    .more-section img,
+    .more-section article {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-form-section-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .footer-section nav {
+        margin: 0 auto;
+        text-align: center;
+        display: none;
+    }
+}

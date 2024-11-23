@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/margin.css">
+    <link rel="stylesheet" href="./assets/css/padding.css">
+
+    <script src="https://kit.fontawesome.com/c362b93708.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <!-- HEADER -->
+    <header>
+        <!-- LOGO -->
+        <div class="header-logo">
+            <img class="header-logo-img" src="./assets/logos/logo-golf.png" alt="">
+        </div>
+
+        <!-- BURGER BUTTON -->
+        <input type="checkbox" id="burger-toggle" class="burger-toggle">
+        <div class="header-burger-section">
+            <label for="burger-toggle" class="header-burger-menu">
+                <i class="fa-solid fa-bars burger-menu-logo"></i>
+            </label>
+        </div>
+        <!-- NAV NAVBAR -->
+        <nav class="header-navbar-list">
+            <ul class="list-style-none uppercase">
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+                <li>Lorem</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION WELCOME -->
+    <section class="welcome-section">
+        <!-- TITLE -->
+        <h2>Bienvenue <br>au Golf du CEFii !</h2>
+
+        <!-- SECTION CARD WELCOME -->
+
+        <div class="welcome-section-cards text-center">
+            <div class="welcome-section-card">
+                <i class="fa-solid fa-calendar-days welcome-section-card-logo"></i>
+                <h3>Nos événements</h3>
+                <p>Inscrivez-vous au prochain <br>tournoi de Golf</p>
+                <div class="short-border"></div>
+            </div>
+            <div class="welcome-section-card">
+                <i class="fa-solid fa-golf-ball-tee welcome-section-card-logo"></i>
+                <h3>Nos services</h3>
+                <p>Découvrez tous nos services <br>disponibles à l'année</p>
+                <div class="short-border"></div>
+            </div>
+            <div class="welcome-section-card">
+                <i class="fa-solid fa-circle-info welcome-section-card-logo"></i>
+                <h3>Information</h3>
+                <p>Les parcours sont <br>momentanément fermés</p>
+                <div class="short-border"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section class="about-section">
+        <div class="about-section-left">
+            <!-- ARTIClE ABOUT -->
+            <div class="about-section-about">
+                <img src="/assets/images/a-propos.jpg" alt="">
+                <article>
+                    <h2>À propos de nous</h2>
+                    <p>
+                        Codifié en Écosse en 1754 par le Royal & Ancien Golf Club de Saint Andrews, le golf est
+                        un sport de précision se jouant en plein air, qui consiste à envoyer une balle dans un trou à
+                        l'aide
+                        de clubs. Le but du jeu consiste à effectuer, sur un parcours défini, le moins de coups
+                        possible.
+                        Précision, endurance, technicité, concentration sont des qualités primordiales pour cette
+                        activité.
+                    </p>
+                </article>
+            </div>
+            <div class="more-section">
+                <img src="/assets/images/en-savoir-plus.jpg" alt="">
+                <article>
+                    <h2>En savoir plus</h2>
+                    <!-- NAV UTILS LINKS -->
+                    <ul class="more-section-list list-style-none">
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-flag"></i>
+                                Votre licence
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-flag"></i>
+                                Vos droits
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-flag"></i>
+                                Votre
+                                parcours
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-flag"></i>
+                                Vos soirées
+                            </a>
+                        </li>
+                    </ul>
+
+                </article>
+            </div>
+        </div>
+        <div class="about-section-right">
+            <!-- ARTICLE NEWS -->
+            <div>
+                <h2>À la une</h2>
+                <div class="about-section-right-image">
+                    <div class="about-section-right-image-date">31/01</div>
+                </div>
+                <article>
+                    <p>Comment augmenter la puissance de <br>votre swing ?</p>
+                    <p>Pour gagner de la vitesse il faut disposer d'énergie et l'utiliser au mieux. À la montée, nous
+                        accumulons de l'énergie potentielle de pesanteur. Pendant la descente, nous transformons cette
+                        énergie en énergie cinétique avec un minimum de pertes pour accélérer jusqu'au finish.</p>
+
+                    <!-- BUTTON -->
+                    <a href="#" class="text-decoration-none">
+                        Lire la suite
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION VIDEO -->
+    <section class="section-video">
+        <!-- TITLE -->
+        <h2>Découvrer notre dernière vidéo !</h2>
+        <!-- YOUTUBE IFRAME VIDEO -->
+        <iframe class="video_golf" width="100%" height="500" src="https://www.youtube.com/embed/DbNQ52R0zNU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form-section">
+        <!-- EMAIL ADDRESS INPUT -->
+        <form class="contact-form-section-content">
+            <i class="fa-regular fa-envelope text-primary"></i>
+            <label for="email">Inscription à la newsletter</label>
+            <input id="email" name="email" type="email" placeholder="Votre adresse email">
+            <input type="submit" value="Valider" class="button">
+        </form>
+        <!-- IMAGE -->
+        <img src="./assets/images/golfeur.jpeg" alt="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-section">
+            <!-- NAV -->
+            <nav>
+                <ul class="list-style-none">
+                    <li class="">
+                        <a class="text-decoration-none" href="index1.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none" href="#">Parcours</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none" href="#">Le domaine</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none" href="#">Les tournois</a>
+                    </li>
+                    <li>
+                        <a class="text-decoration-none" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- BUSINESS ADDRESS INFORMATION -->
+            <div>
+                <address class="text-white text-center">
+                    <div class="icone_location"><i class="fa-solid fa-location-dot"></i></div>
+                    18 rue du Green<br>
+                    49049 GOLF-LAND
+                </address>
+            </div>
+            <!-- SOCIAL NETWORK -->
+            <div class="text-white text-center">
+                <h3>Suivez-nous !</h3>
+                <div class="follow">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <!-- COPYRIGHT -->
+        <p class="text-center text-white copyright-paragraph">© Copyright | Production interne | ® Tous droits réservés
+        </p>
+    </footer>
+</body>
+
+</html>

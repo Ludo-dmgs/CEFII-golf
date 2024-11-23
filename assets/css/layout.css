@@ -1,0 +1,133 @@
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #BDA672;
+}
+
+.header-logo {
+    width: 25%;
+}
+
+.header-logo-img {
+    min-width: 320px;
+    max-width: 320px;
+}
+
+.burger-toggle {
+    display: none;
+}
+
+/* BURGER MENU */
+.header-burger-menu {
+    display: none;
+}
+
+/* NAV NAVBAR */
+.header-navbar-list {
+    max-width: 50%;
+}
+
+.header-navbar-list ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-navbar-list ul li {
+    padding: 10px;
+    border-bottom: 2px transparent solid;
+}
+
+.header-navbar-list ul li:hover {
+    color: #BDA672;
+    border-bottom: 2px #BDA672 solid;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: #3B3A3A;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.footer-section a {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        width: 50%;
+    }
+
+    .header-navbar-list {
+        width: 100%;
+        display: none;
+        background-color: white;
+        z-index: 10;
+        overflow: hidden;
+    }
+
+    .header-burger-section {
+        width: 50%;
+    }
+
+    .header-burger-menu {
+        display: block;
+        padding: 1rem;
+        cursor: pointer;
+        text-align: right;
+    }
+
+    .burger-toggle:checked~.header-navbar-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .burger-menu-logo {
+        font-size: 1.5rem;
+        color: gray;
+        margin-left: auto;
+    }
+
+    .header-logo-img {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .header-navbar-list {
+        display: none;
+        margin: 0 auto;
+    }
+
+    .header-navbar-list ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .footer-section nav {
+        margin: 0 auto;
+        text-align: center;
+        display: none;
+    }
+}
